@@ -1,10 +1,10 @@
-<h1>GitHub</h1>
+<h1><%=@user['name']%>GitHub</h1>
 
 <div id="right">
     <nav>
         <div>Overview</div>
         <div>Repositories</div>
-        <div><%= @profile['public_repos'] %></div>
+        <div><%= @user['public_repos'] %></div>
     </nav>
 
     <div id="repos">
