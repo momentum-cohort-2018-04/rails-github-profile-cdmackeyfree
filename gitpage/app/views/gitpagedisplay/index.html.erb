@@ -1,0 +1,16 @@
+<h1><%=@user['name']%>GitHub</h1>
+
+<div id="right">
+    <nav>
+        <div>Overview</div>
+        <div>Repositories</div>
+        <div><%= @user['public_repos'] %></div>
+    </nav>
+
+    <div id="repos">
+        <% @repos.each do |repo| %>
+            <div id="title"><%= repo['name'] %><br></div>
+            <%= repo['description'] %><br>
+        <% end %>
+    </div>
+</div>

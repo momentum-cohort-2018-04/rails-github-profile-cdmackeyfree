@@ -1,0 +1,2 @@
+module GitpageHelper
+end
